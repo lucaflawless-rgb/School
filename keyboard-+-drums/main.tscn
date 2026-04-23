@@ -1,8 +1,11 @@
 [gd_scene format=3 uid="uid://b47x0cx14mas3"]
 
 [ext_resource type="Script" uid="uid://b621v1ws1c60a" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://bf1vnufu7na6x" path="res://addons/midi/MidiPlayer.gd" id="2_0xm2m"]
 
-[node name="main" type="Control" unique_id=1959989580]
-layout_mode = 3
-anchors_preset = 0
+[node name="main" type="Node2D" unique_id=1721947977]
 script = ExtResource("1_ig7tw")
+
+[node name="MidiPlayer" type="Node" parent="." unique_id=2067669896]
+script = ExtResource("2_0xm2m")
+soundfont = "res://addons/Aspirin-Stereo.sf2"
