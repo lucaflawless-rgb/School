@@ -3,9 +3,117 @@
 [ext_resource type="Script" uid="uid://bsdkjruwhd6x4" path="res://main.gd" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://bf1vnufu7na6x" path="res://addons/midi/MidiPlayer.gd" id="2_h2yge"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0xm2m"]
+bg_color = Color(0.41960785, 0.3529412, 0.03137255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h2yge"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1bvp3"]
+bg_color = Color(0.78431374, 0.627451, 0.0627451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lquwl"]
+bg_color = Color(0.41960785, 0.3529412, 0.03137255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7mycd"]
+bg_color = Color(0.78431374, 0.627451, 0.0627451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_272bh"]
+bg_color = Color(0.41960785, 0.3529412, 0.03137255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5vw27"]
+bg_color = Color(0.78431374, 0.627451, 0.0627451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kek77"]
+bg_color = Color(0.05490196, 0.1882353, 0.3764706, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ycdy4"]
+bg_color = Color(0.26047033, 0.50381464, 0.7151637, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4c57u"]
+bg_color = Color(0.05490196, 0.1882353, 0.3764706, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w48qg"]
+bg_color = Color(0.25882354, 0.5019608, 0.7137255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_efxa6"]
+bg_color = Color(0.101960786, 0.101960786, 0.18039216, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vivmo"]
+bg_color = Color(0.5972733, 0.52959895, 0.93353844, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dg77c"]
+bg_color = Color(0.3529412, 0.07058824, 0.03137255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2cqfq"]
+bg_color = Color(0.9372549, 0.101960786, 0.23137255, 1)
+
 [node name="Main" type="Node2D" unique_id=993273811]
 script = ExtResource("1_0xm2m")
 
 [node name="MidiPlayer" type="Node" parent="." unique_id=311626224]
 script = ExtResource("2_h2yge")
 soundfont = "res://addons/Aspirin-Stereo.sf2"
+
+[node name="Crash" type="Button" parent="." unique_id=92348762]
+offset_left = 100.0
+offset_top = 120.0
+offset_right = 220.0
+offset_bottom = 160.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_0xm2m")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_h2yge")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1bvp3")
+text = "CRASH"
+
+[node name="Hi-Hat" type="Button" parent="." unique_id=150141067]
+offset_left = 280.0
+offset_top = 120.0
+offset_right = 400.0
+offset_bottom = 160.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_lquwl")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7mycd")
+text = "HI-HAT"
+
+[node name="Ride" type="Button" parent="." unique_id=1840562225]
+offset_left = 460.0
+offset_top = 120.0
+offset_right = 580.0
+offset_bottom = 160.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_272bh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5vw27")
+text = "RIDE"
+
+[node name="Tom1" type="Button" parent="." unique_id=1141605698]
+offset_left = 160.0
+offset_top = 220.0
+offset_right = 270.0
+offset_bottom = 320.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_kek77")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ycdy4")
+text = "TOM1"
+
+[node name="Tom2" type="Button" parent="." unique_id=88325155]
+offset_left = 360.0
+offset_top = 220.0
+offset_right = 470.0
+offset_bottom = 330.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_4c57u")
+theme_override_styles/hover = SubResource("StyleBoxFlat_w48qg")
+text = "TOM2"
+
+[node name="Snare" type="Button" parent="." unique_id=1511978679]
+offset_left = 160.0
+offset_top = 380.0
+offset_right = 290.0
+offset_bottom = 510.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_efxa6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vivmo")
+text = "SNARE"
+
+[node name="Kick" type="Button" parent="." unique_id=1477286090]
+offset_left = 380.0
+offset_top = 360.0
+offset_right = 560.0
+offset_bottom = 540.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_dg77c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_2cqfq")
+text = "KICK"
