@@ -15,6 +15,11 @@ run/main_scene="uid://dsbyfx58bcfpn"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=900
+window/size/viewport_height=600
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
@@ -22,3 +27,4 @@ config/icon="res://icon.svg"
 [rendering]
 
 rendering_device/driver.windows="d3d12"
+environment/defaults/default_clear_color=Color(0.6147924, 0.1946204, 0.24809684, 0.99215686)
