@@ -86,10 +86,17 @@ func _play():
 	$BtnRec.disabled = true
 	$Status.text = "playing back..."
 	for hit in takes:
-		var drum = hit["drum"]
+		var drum: String = hit["drum"]
 		get_tree().create_timer(hit["ms"] / 1000.0).timeout.connect(func():
 			_hit(drum)
 		)
+
+	var dur = takes[-1]["ms"] / 1000.0
+	get_tree().create_timer(dur + 0.3).timeout.connect(func():
+		$BtnPlay.disabled = false
+		$BtnRec.disabled = false
+		$Status.text = "done — press PLAY again or REC for new take"
+	)
 
 func _clear():
 	takes.clear()
