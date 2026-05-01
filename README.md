@@ -44,6 +44,8 @@ References
 
 Godot Engine Documentation – https://docs.godotengine.org
 GDQuest (Godot tutorials & guides) – https://www.gdquest.com
+Claude Ai used to help create the record and playback features in both instruments
+
 
 ## What im proud of and learn (Luca)
 
