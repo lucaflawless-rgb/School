@@ -43,7 +43,9 @@ A keyboard is a row of piano keys mapped to keyboard shortcuts and mouse input, 
 References
 
 Godot Engine Documentation – https://docs.godotengine.org
+
 GDQuest (Godot tutorials & guides) – https://www.gdquest.com
+
 Claude Ai used to help create the record and playback features in both instruments
 
 
